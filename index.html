@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>荣景文川音乐 - 中原风 × Z世代情绪疗愈</title>
+    <meta name="description" content="荣景文川音乐厂牌，以AI技术赋能中华文化场景音乐，专注Z世代情绪疗愈与共鸣。">
+    <style>
+        :root {
+            --primary: #a6192e;    /* 朱红 */
+            --dark: #1e1e1e;
+            --light: #f8f5f0;
+            --accent: #d4a574;     /* 淡金 */
+            --gray: #f0ede5;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.8;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(248,245,240,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(30,30,30,0.1);
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 6px;
+            color: var(--primary);
+        }
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+        nav a:hover { color: var(--primary); }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: linear-gradient(rgba(248,245,240,0.85), rgba(248,245,240,0.9)),
+                        url('https://via.placeholder.com/1920x1080?text=麦田+落日+中原意境') center/cover no-repeat;
+        }
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        .btn {
+            padding: 1rem 3rem;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .btn:hover { background: #8b1426; }
+
+        section { padding: 8rem 5%; max-width: 1400px; margin: 0 auto; }
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            color: var(--primary);
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        .album-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.4s;
+        }
+        .album-card:hover { transform: translateY(-10px); }
+        .album-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .album-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .album-info h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .tech-section {
+            background: var(--gray);
+            text-align: center;
+        }
+        .tech-section p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.2rem;
+        }
+
+        .token-section {
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+        }
+        .token-section h2 { color: #d4a574; }
+        .token-section a {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            background: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem;
+            background: var(--dark);
+            color: #888;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">荣景音乐</div>
+        <nav>
+            <a href="#works">作品</a>
+            <a href="#about">关于厂牌</a>
+            <a href="#token">生态凭证</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>荣景文川</h1>
+        <p>以中华文化为根，以AI技术为翼<br>为Z世代打造情绪疗愈的场景音乐</p>
+        <button class="btn">听最新专辑</button>
+    </section>
+
+    <section id="works">
+        <h2>音乐作品</h2>
+        <div class="album-grid">
+            <!-- 专辑1 -->
+            <div class="album-card">
+                <img src="https://via.placeholder.com/400x400?text=理性燎原" alt="">
+                <div class="album-info">
+                    <h3>理性燎原</h3>
+                    <p>理性燎原</p>
+                    <div class="play-btn">▶</div>
+                </div>
+            </div>
+            <!-- 专辑2 -->
+            <div class="album-card">
+                <img src="https://via.placeholder.com/400x400?text=晴冬" alt="晴冬">
+                <div class="album-info">
+                    <h3>晴冬</h3>
+                    <p>晴冬</p>
+                    <div class="play-btn">▶</div>
+                </div>
+            </div>
+            <!-- 专辑3 -->
+            <div class="album-card">
+                <img src="https://via.placeholder.com/400x400?text=一念轻安" alt="一念轻安">
+                <div class="album-info">
+                    <h3>一念轻安</h3>
+                    <p>一念轻安</p>
+                    <div class="play-btn">▶</div>
+                </div>
+            </div>
+            <!-- 更多可继续加 -->
+        </div>
+    </section>
+
+    <section id="about" class="tech-section">
+        <h2>AI × 人工，双重精修</h2>
+        <p>我们使用前沿AI技术快速生成高品质场景音乐，<br>再由专业音乐人进行人工混音、修音与情感润色，确保每一首歌的品质。</p>
+        <p>目标：让“情绪疗愈”音乐像短视频一样可规模化生产，又像传统厂牌一样有灵魂。</p>
+    </section>
+
+    <section id="token" class="token-section">
+        <h2>Crestwave Coin</h2>
+        <p>荣景文川音乐厂牌的所有收益，80% 将用于回购并分红给 Crestwave Coin 持有者<br>持有即持续享受音乐厂牌增长红利</p>
+        <a href="https://crestwave.com" target="_blank">了解 Crestwave Coin →</a>
+    </section>
+
+    <footer>
+        <p>© 2025 荣景文川音乐厂牌 © All Rights Reserved<br>
+       
+    </footer>
+
+</body>
+</html>
