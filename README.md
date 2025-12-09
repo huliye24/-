@@ -32,7 +32,7 @@
 
 ---
 
-## Project Structure / 项目结构（示例）
+## Project Structure / 项目结构
 
 ```text
 .
